@@ -9,6 +9,7 @@ class Person{
 	private String fname;
 	private String lname;
 	private int Age;
+	private String Address;
 	
 	public String getFname() {
 		return fname;
