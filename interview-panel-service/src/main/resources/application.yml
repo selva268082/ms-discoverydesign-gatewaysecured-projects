@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: interview-panel-service
+  data: 
+    mongodb: 
+      authentication-database: admin
+      username: selva
+      password: selva
+      database: test
+      port: 27017
+      host: localhost
+server:
+  port: 8081
