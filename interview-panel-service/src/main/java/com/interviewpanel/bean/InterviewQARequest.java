@@ -1,5 +1,7 @@
 package com.interviewpanel.bean;
 
+import java.util.List;
+
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import lombok.Data;
@@ -9,12 +11,9 @@ import lombok.Data;
 @Data
 public class InterviewQARequest {
 	
-    private String qId;
+    private String questionPostedBy;
 	private String employerName;
-	private String technology;
-	private String questionAsked;
-	private String givenAnswer;
+	private List<QuestionAnswers> questionAnswers;
 	private String interviewDate;
-	//private List<QABlock> qaBlock;
-
+ 
 }

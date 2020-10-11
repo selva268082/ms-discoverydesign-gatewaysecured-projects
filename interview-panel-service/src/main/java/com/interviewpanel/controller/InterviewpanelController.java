@@ -48,11 +48,11 @@ public class InterviewpanelController {
 	public InterviewQARequest delete(@PathVariable("id") String id) {
 		InterviewQARequest deletedEmp = null;
 		for (InterviewQARequest interviewQARequest : interviewQARequestList) {
-			if (interviewQARequest.getQId().equals(id)) {
-				interviewQARequestList.remove(interviewQARequest);
-				deletedEmp = interviewQARequest;
-				break;
-			}
+			/*
+			 * if (interviewQARequest.getQId().equals(id)) {
+			 * interviewQARequestList.remove(interviewQARequest); deletedEmp =
+			 * interviewQARequest; break; }
+			 */
 		}
 		return deletedEmp;
 	}
@@ -78,20 +78,20 @@ public class InterviewpanelController {
 	private static List<InterviewQARequest> createInterviewQAList() {
 		List<InterviewQARequest> interviewQARequestList = new ArrayList<>();
 		InterviewQARequest interviewQA = new InterviewQARequest();
-		interviewQA.setQId("1");
+	//	interviewQA.setQId("1");
 		interviewQA.setEmployerName("TCS");
-		interviewQA.setInterviewDate("04/19/2020");
-		interviewQA.setQuestionAsked("What is Microservice?");
-		interviewQA.setGivenAnswer("Decoupling of monolithic application in to granular service.");
-		interviewQA.setTechnology("Microservice");
+//		interviewQA.setInterviewDate("04/19/2020");
+//		interviewQA.setQuestionAsked("What is Microservice?");
+//		interviewQA.setGivenAnswer("Decoupling of monolithic application in to granular service.");
+//		interviewQA.setTechnology("Microservice");
 
 		InterviewQARequest interviewQA1 = new InterviewQARequest();
-		interviewQA1.setQId("2");
+	//	interviewQA1.setQId("2");
 		interviewQA1.setEmployerName("TCS");
 		interviewQA1.setInterviewDate("04/19/2020");
-		interviewQA1.setQuestionAsked("What is Microservice?");
-		interviewQA1.setGivenAnswer("Decoupling of monolithic application in to granular service.");
-		interviewQA1.setTechnology("Microservice");
+//		interviewQA1.setQuestionAsked("What is Microservice?");
+//		interviewQA1.setGivenAnswer("Decoupling of monolithic application in to granular service.");
+//		interviewQA1.setTechnology("Microservice");
 		
 		interviewQARequestList.add(interviewQA);
 		interviewQARequestList.add(interviewQA1);

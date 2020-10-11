@@ -42,3 +42,8 @@ dependencies {
 test {
 	useJUnitPlatform()
 }
+
+jar {
+    baseName = 'interview-panel'
+    version =  '0.1.0'
+}
